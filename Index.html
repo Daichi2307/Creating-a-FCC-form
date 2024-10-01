@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>Let us know how we can improve freeCodeCamp</p>
+
+        <form>
+            <label for="name">Name: *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email: *</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label for="age">Age: *</label>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+
+            <label for="role">Which option best describes your current role?</label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="full-time-job">Full-time job</option>
+                <option value="full-time-learner">Full-time learner</option>
+                <option value="prefer-not-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>How likely is it that you would recommend freeCodeCamp to a friend? *</label>
+            <label><input type="radio" name="recommend" value="definitely" required> Definitely</label>
+            <label><input type="radio" name="recommend" value="maybe" required> Maybe</label>
+            <label><input type="radio" name="recommend" value="not-sure" required> Not sure</label>
+
+            <label for="most-like">What do you like most in FCC:</label>
+            <select id="most-like" name="most-like">
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+
+            <label>Things that should be improved in the future (Check all that apply):</label>
+            <label><input type="checkbox" name="improve" value="frontend"> Front-end Projects</label>
+            <label><input type="checkbox" name="improve" value="backend"> Back-end Projects</label>
+            <label><input type="checkbox" name="improve" value="data-visualization"> Data Visualization</label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
